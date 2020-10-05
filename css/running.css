@@ -1,0 +1,40 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    background-color: darkkhaki;
+}
+
+.main-container {
+    height: 800px;
+    width: 800px;
+
+    border: 2px solid white;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+
+    background-color: lightpink;
+
+    position: absolute;
+
+    animation-name: run;
+    animation-duration: 5S;
+    animation-iteration-count: infinite;
+}
+
+@keyframes run {
+    0% {left: 0; top: 0; background-color: lightgoldenrodyellow;}
+    25% {left: 75%; top: 0; background-color: lightblue;}
+    50% {left: 75%; top: 75%; background-color: lightsalmon;}
+    75% {left: 0; top: 75%; background-color: lightseagreen;}
+    100% {left: 0; top: 0; background-color: lightslategray;}
+}

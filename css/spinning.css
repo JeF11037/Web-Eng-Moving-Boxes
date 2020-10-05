@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    background-color: darkkhaki;
+}
+
+.main-container {
+    height: 800px;
+    width: 800px;
+
+    border: 2px solid white;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+
+    background-color: lightpink;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -15% 0% 0% -15%;
+
+    transition-duration: 2s;
+    transition-property: all;
+    
+}
+
+.box:hover {
+    background-color: lightgoldenrodyellow;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
